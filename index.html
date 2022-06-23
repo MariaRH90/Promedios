@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/indexTablet.css">
+  <link rel="stylesheet" href="./css/indexEscritorio.css">
+  <link rel="shortcut icon" href="./images/logotipo3.gif">
+  <title>Promedios</title>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="aprobadoReprobado">
+      <b>¿Aprobado o Reprobado?</b>
+      <img id="imagenPromedio" src="images/Promedio.jpg" alt="Promedio" height="100%" width="150px">
+    </div>
+  </header>
+
+  <table id="table1" style="width:100%">
+    <thead>
+      <tr>
+        <th rowspan="2">Nombres</th>
+        <th rowspan="2">Apellidos</th>
+        <th colspan="3">Momento</th>
+        <th rowspan="2">Promedio</th>
+      </tr>
+      <tr>
+        <th> 1º </th>
+        <th> 2º </th>
+        <th> 3º </th>
+      </tr>
+    </thead>
+    <tbody id="contenedorDeNombresYPromedios">
+
+    </tbody>
+  </table>
+
+  <form>
+    <label for="nombre"> Nombres: </label>
+    <input value="" class="col-12" type="text" id="nombre"><br>
+
+    <label for="apellido"> Apellidos: </label>
+    <input class="col-12" type="text" id="apellido"> <br>
+
+    <select class=materia id="Materia" name="Materia">
+      <option value="Matemática">Matemática</option>
+      <option value="Castellano">Castellano</option>
+      <option value="Ciencias Naturales">Ciencias Naturales</option>
+      <option value="Sociales">Sociales</option>
+    </select><br>
+    <label for="nota1"> 1 Momento </label>
+    <input class="col-12" type="number" name="" id="nota1"><br>
+    <label for="nota2"> 2 Momento </label>
+    <input class="col-12" type="number" name="" id="nota2"><br>
+    <label for="nota3"> 3 Momento </label>
+    <input class="col-12" type="number" name="" id="nota3"><br>
+    <form action="/action_page.php" autocomplete="on"></form>
+
+
+    <div class="formButton" onclick="agregarAlumnos()">
+      Enviar
+    </div>
+  </form>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+  height: 2vmin;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+  height: 2vmin
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  color: rgb(110, 139, 236);
+  font-size: 3vh;
+  margin: 13px;
+}
+
+#aprobadoReprobado {
+  font-style: initial;
+  text-align: center;
+  font-size: 7vw;
+  color: rgb(25, 0, 255);
+  margin: 2px;
+  display: flex;
+  columns: 50% 50%;
+  align-items: center;
+}
+
+.materia {
+  font-size: 4vw;
+}
+
+header {
+  margin: 18px;
+  background-color: rgb(150, 221, 232);
+}
+
+input {
+  font-size: 5vw;
+}
+
+.aprobado {
+  color: rgb(0, 0, 0)
+}
+
+.reprobado {
+  color: crimson;
+}
+
+table {
+  font-size: 5vw;
+  width: 100%;
+}
+#table1 {
+   color: black;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  color: rgb(50, 18, 211);
+
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+.formButton {
+  cursor: pointer;
+  color: rgb(240, 240, 240);
+  background-color: rgb(72, 72, 210);
+  text-align: center;
+}
+
+.formButton:hover{
+  color: rgb(110, 139, 236);
+  background-color: rgb(72, 72, 210);
+}
+
+.formButton:active {
+  color: rgb(11, 12, 12);
+  background-color: rgb(247, 244, 49);
+}

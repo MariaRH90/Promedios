@@ -1,0 +1,32 @@
+@media only screen and (min-width: 426px) {
+
+    body {
+        display: flexbox;
+        justify-content: space-evenly;
+        font: size 2vw;
+        ;
+    }
+
+    #aprobadoReprobado {
+        font-size: 7vw;
+
+    }
+
+    .materia {
+        font-size: 3vw;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+    }
+
+    input {
+        margin: 10px;
+        padding: none;
+        justify-content: space-evenly;
+    }
+
+    #imagenPromedio {
+        width: 50%;
+        height: 100%;
+    }
+
+}
