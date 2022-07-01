@@ -51,6 +51,8 @@ function imprimir() {
         htmlAlumnosPromedio += "<tr> <td>" + nombre + "</td> <td>"
             + apellido + "</td> <td>" + nota1 + "</td> <td>" + nota2
             + "</td> <td>" + nota3 + "</td>" + obtenerTdEstaAprobado(promedio)
+            + "<td><div class='formButton' onclick='editarAlumnos(" + i + ")'>Editar</div></td>"
+            + "<td><div class='formButton' onclick='borrarAlumnos(" + i + ")'>Borrar</div></td>"
 
     }
     document.getElementById("contenedorDeNombresYPromedios")
@@ -87,3 +89,16 @@ function pasoELFiltroPorCantidadDeNumero(nota, tamanhoMin) {
 
 // var resultado = parseInt("hgfrrr 3434")
 
+function borrarAlumnos(i) {
+    console.log(i)
+    nombres.splice(i,1)
+    apellidos.splice(i,1)
+    momentos1.splice(i,1)
+    momentos2.splice(i,1)
+    momentos3.splice(i,1)
+    imprimir()
+}
+
+function editarAlumnos(i) {
+    console.log("Editando")
+}
